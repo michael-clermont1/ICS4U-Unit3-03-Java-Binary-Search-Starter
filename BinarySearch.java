@@ -14,9 +14,9 @@ import java.util.Arrays;
 final class BinarySearch {
   private BinarySearch() {
     // Prevent instantiation
-		// Optional: throw an exception e.g. AssertionError
-		// if this ever *is* called
-		throw new IllegalStateException("Cannot be instantiated");
+    // Optional: throw an exception e.g. AssertionError
+    // if this ever *is* called
+    throw new IllegalStateException("Cannot be instantiated");
   }
 
   /**
@@ -41,21 +41,21 @@ final class BinarySearch {
 	* @param highIndex
   * @return binarySearch
   */
-  static int binarySearch(int[] userArray, int userNumber, 
+  static int binarySearch(final int[] userArray, int userNumber,
                              int lowIndex, int highIndex) {
 		// solve this function!
-    
+  
 		return -1;
   }
 
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     System.out.println("Binary Search Program");
 		try {
       // Initializing the random class
       Random randNumber = new Random();
 
       // Initializing array of numbers
-      int[] randomNumberArray = new int [ARRAY_SIZE];
+      int[] randomNumberArray = new int[ARRAY_SIZE];
 
       // Adding numbers to the array
       for (int counter = 0; counter < randomNumberArray.length; counter++) {
@@ -65,11 +65,11 @@ final class BinarySearch {
       // Sorting the array
       int[] numberArray = randomNumberArray;
 			Arrays.sort(numberArray);
-			
-			System.out.print("\nHere is the sorted list of numbers:\n");
+	
+			System.out.print("\nSorted list of numbers:\n");
 			for (int element: numberArray) {
-				String padded = String.format("%03d" , element);
-				System.out.print(padded + ", ");    
+				String padded = String.format("%03d", element);
+				System.out.print(padded + ", ");
       }
 			System.out.print("\n\n");
 
@@ -86,7 +86,7 @@ final class BinarySearch {
         throw new Exception();
       } else {
         // Using binary search to find the user's chosen number in the array
-        int searchResult = binarySearch(numberArray, searchNumber, 
+        int searchResult = binarySearch(numberArray, searchNumber,
                                            0, numberArray.length - 1);
 
         // Outputing the results of the search
@@ -98,6 +98,6 @@ final class BinarySearch {
     } catch (Exception e) {
       System.out.println();
       System.out.println("ERROR: Invalid Input");
-    } 
+    }
   }
 }
