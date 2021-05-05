@@ -13,7 +13,7 @@ import java.util.Arrays;
 
 final class BinarySearch {
   private BinarySearch() {
-		// Prevent instantiation
+    // Prevent instantiation
 		// Optional: throw an exception e.g. AssertionError
 		// if this ever *is* called
 		throw new IllegalStateException("Cannot be instantiated");
@@ -33,8 +33,14 @@ final class BinarySearch {
   public static final int ARRAY_SIZE = 250;
 
   /**
-   * This function uses binary search to search an array for a specific number.
-   */
+  * Function finds the index of a number, using Binary Search recursively.
+  *
+  * @param userArray
+	* @param userNumber
+	* @param lowIndex
+	* @param highIndex
+  * @return binarySearch
+  */
   static int binarySearch(int[] userArray, int userNumber, 
                              int lowIndex, int highIndex) {
 		// solve this function!
