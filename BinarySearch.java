@@ -36,16 +36,16 @@ final class BinarySearch {
   * Function finds the index of a number, using Binary Search recursively.
   *
   * @param userArray
-	* @param userNumber
-	* @param lowIndex
-	* @param highIndex
+  * @param userNumber
+  * @param lowIndex
+  * @param highIndex
   * @return binarySearch
   */
   static int binarySearch(final int[] userArray, final int userNumber,
                           final int lowIndex, final int highIndex) {
-		// solve this function!
+    // solve this function!
 
-		return -1;
+    return -1;
   }
 
   public static void main(final String[] args) {
