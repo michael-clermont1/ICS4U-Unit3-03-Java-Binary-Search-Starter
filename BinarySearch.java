@@ -50,7 +50,7 @@ final class BinarySearch {
 
   public static void main(final String[] args) {
     System.out.println("Binary Search Program");
-		try {
+    try {
       // Initializing the random class
       Random randNumber = new Random();
 
