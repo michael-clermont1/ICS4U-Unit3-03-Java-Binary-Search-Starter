@@ -41,10 +41,10 @@ final class BinarySearch {
 	* @param highIndex
   * @return binarySearch
   */
-  static int binarySearch(final int[] userArray, int userNumber,
-                             int lowIndex, int highIndex) {
+  static int binarySearch(final int[] userArray, final int userNumber,
+                          final int lowIndex, final int highIndex) {
 		// solve this function!
-  
+
 		return -1;
   }
 
@@ -65,7 +65,7 @@ final class BinarySearch {
       // Sorting the array
       int[] numberArray = randomNumberArray;
 			Arrays.sort(numberArray);
-	
+
 			System.out.print("\nSorted list of numbers:\n");
 			for (int element: numberArray) {
 				String padded = String.format("%03d", element);
