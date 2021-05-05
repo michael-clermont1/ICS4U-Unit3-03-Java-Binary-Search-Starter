@@ -10,9 +10,28 @@
 import java.util.Random;
 import java.util.Scanner;
 import java.util.Arrays;
-import java.util.Collections;
 
-class Main {
+final class BinarySearch {
+  private BinarySearch() {
+		// Prevent instantiation
+		// Optional: throw an exception e.g. AssertionError
+		// if this ever *is* called
+		throw new IllegalStateException("Cannot be instantiated");
+  }
+
+  /**
+  * The min number for array.
+  */
+  public static final int MIN = 0;
+  /**
+  * The max number for array.
+  */
+  public static final int MAX = 999;
+  /**
+  * The number of elements in the array.
+  */
+  public static final int ARRAY_SIZE = 250;
+
   /**
    * This function uses binary search to search an array for a specific number.
    */
@@ -30,11 +49,11 @@ class Main {
       Random randNumber = new Random();
 
       // Initializing array of numbers
-      int[] randomNumberArray = new int [250];
+      int[] randomNumberArray = new int [ARRAY_SIZE];
 
       // Adding numbers to the array
       for (int counter = 0; counter < randomNumberArray.length; counter++) {
-        randomNumberArray[counter] = randNumber.nextInt(999) + 1;
+        randomNumberArray[counter] = randNumber.nextInt(MAX) + 1;
       }
 
       // Sorting the array
@@ -57,7 +76,7 @@ class Main {
       System.out.println();
 
       // Ensuring the user inputs an appropriate integer
-      if (searchNumber > 999 || searchNumber < 0) {
+      if (searchNumber > MAX || searchNumber < MIN) {
         throw new Exception();
       } else {
         // Using binary search to find the user's chosen number in the array
