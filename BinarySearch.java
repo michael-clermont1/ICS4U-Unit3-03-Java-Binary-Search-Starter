@@ -64,14 +64,14 @@ final class BinarySearch {
 
       // Sorting the array
       int[] numberArray = randomNumberArray;
-			Arrays.sort(numberArray);
+      Arrays.sort(numberArray);
 
-			System.out.print("\nSorted list of numbers:\n");
-			for (int element: numberArray) {
-				String padded = String.format("%03d", element);
-				System.out.print(padded + ", ");
+      System.out.print("\nSorted list of numbers:\n");
+      for (int element: numberArray) {
+        String padded = String.format("%03d", element);
+        System.out.print(padded + ", ");
       }
-			System.out.print("\n\n");
+      System.out.print("\n\n");
 
       // Getting user input as to what number they wish to search for
       Scanner userInput = new Scanner(System.in);
