@@ -87,7 +87,7 @@ final class BinarySearch {
       } else {
         // Using binary search to find the user's chosen number in the array
         int searchResult = binarySearch(numberArray, searchNumber,
-                                           0, numberArray.length - 1);
+                                        0, numberArray.length - 1);
 
         // Outputing the results of the search
         System.out.println();
