@@ -78,7 +78,7 @@ final class BinarySearch {
       System.out.print("What number are you searching for in the array");
       System.out.print(" (integer between 0 and 999): ");
       int searchNumber = userInput.nextInt();
-			userInput.close();
+      userInput.close();
       System.out.println();
 
       // Ensuring the user inputs an appropriate integer
