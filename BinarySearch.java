@@ -72,7 +72,7 @@ final class BinarySearch {
     * @param args No args will be used
     */
     public static void main(final String[] args) {
-        System.out.println("Binary Search Program");
+        System.out.println("Binary Search Program.");
         try {
             // Initializing the random class
             final Random randNumber = new Random();
